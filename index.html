@@ -185,6 +185,7 @@
                 el.value = currentValue - value
             }
         }
+       el.dispatchEvent(new Event("input", { bubbles: true }));
     }
 </script>
 
