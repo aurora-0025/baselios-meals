@@ -95,7 +95,7 @@ h1 {
     width: 100px;
 }
 
-.storeItem button {
+.storeItem .incdecbut {
     width: 100%;
     color: white;
     background-color: rgb(72, 72, 138);

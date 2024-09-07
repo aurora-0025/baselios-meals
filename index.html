@@ -120,9 +120,9 @@
             <h3>${key}</h3>
             <p>₹ ${item.price}</p>
             <div class="input_contain">
-                <button onClick="updateValue('#${key}_input','add', 1)">△</button>
+                <div class="incdecbut" onClick="updateValue('#${key}_input','add', 1)">△</div>
                 <input type="number" size="10" max="${item.quantity}" min="0" value="0" id="${key}_input"/>
-                <button onClick="updateValue('#${key}_input','subtract', 1)">▽</button>
+                <div class="incdecbut" onClick="updateValue('#${key}_input','subtract', 1)">▽</div>
             </div>
             </div>
         `
@@ -144,9 +144,9 @@
             <h3>${key}</h3>
             <p>₹ ${item.price}</p>
             <div class="input_contain">
-                <button onClick="updateValue('#${key}_input','add', 1)">△</button>
+                <div class="incdecbut" onClick="updateValue('#${key}_input','add', 1)">△</div>
                 <input type="number" size="10" max="${item.quantity}" min="0" value="0" id="${key}_input"/>
-                <button onClick="updateValue('#${key}_input','subtract', 1)">▽</button>
+                <div class="incdecbut" onClick="updateValue('#${key}_input','subtract', 1)">▽</div>
             </div>
             </div>
         `
