@@ -58,7 +58,8 @@
 
     function buyNow(e) {
         if (document.getElementsByTagName("form")[0].checkValidity()) {
-            let message = "Item\t\tQty\t\tPrice\n"
+
+            let message = `TeamName:${document.getElementById("teamname").value}\nRoomName:${document.getElementById("roomname").value}\nItem\t\tQty\t\tPrice\n`
             Object.keys(cart).forEach((key) => {
                 message += `${key}\t\t${cart[key].quantity}\t\t${cart[key].price}\n`
             })
