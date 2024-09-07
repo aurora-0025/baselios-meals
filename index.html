@@ -62,8 +62,8 @@
             Object.keys(cart).forEach((key) => {
                 message += `${key}\t\t${cart[key].quantity}\t\t${cart[key].price}\n`
             })
-            message += `delivery: ₹ 5`
-            message += `total: ${calculateTotalPrice(cart) + 5}`
+            message += `delivery: ₹ 5\n`
+            message += `total: ₹ ${calculateTotalPrice(cart) + 5}`
             console.log(message)
             window.open(`https://wa.me/9496570025?text=${encodeURIComponent(message)}`, '_blank').focus();
         }
