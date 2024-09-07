@@ -1,92 +1,3 @@
-h1, h2, h3, h4, p {
-    padding: 0;
-    margin: 0;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-body {
-    position: relative;
-}
-
-form div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.title {
-    font-size: 66px;
-    color: blue;
-    text-align: center;
-}
-
-h1 {
-    color: blue;
-}
-.storeItem {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 200px;
-}
-
-.storeItem div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.storeItem input {
-    width: 100px;
-}
-
-.storeItem img {
-    width: 100px;
-}
-
-
-
-.store {
-    margin-bottom: 350px;
-}
-
-.footer {
-    background-color: aliceblue;
-    border-top: 10px solid red;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    height: 350px;
-}
-
-.total h1 {
-    font-size: 32px;
-}
-
-.total p {
-    font-size: 30px;
-    font-weight: 700;
-}
-
-.checkout {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-}
-
-
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -133,4 +44,95 @@ h1 {
   #root, #__next {
     isolation: isolate;
   }
-  
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    position: relative;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    font-size: 66px;
+    color: blue;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+.storeItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 6px solid blue;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+.storeItem div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storeItem input {
+    width: 100px;
+}
+
+.storeItem img {
+    width: 100px;
+}
+
+
+
+.store {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 350px;
+}
+
+.footer {
+    background-color: aliceblue;
+    padding: 0 20px;
+    border-top: 10px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+}
+
+.total h1 {
+    font-size: 32px;
+    margin-bottom: -30px;
+}
+
+.total p {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.checkout {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}  
