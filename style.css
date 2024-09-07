@@ -95,11 +95,37 @@ h1 {
     width: 100px;
 }
 
+.storeItem button {
+    width: 100%;
+    color: white;
+    background-color: rgb(72, 72, 138);
+    border: none;
+    border-radius: 10px;
+}
+
 .storeItem img {
     width: 100px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#input {
+  text-align: center;
+}
+
+.input_contain {
+    width: 100%;
+    display: flex;
+}
 
 .store {
     background-color: white;

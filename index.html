@@ -119,7 +119,11 @@
             <div>
             <h3>${key}</h3>
             <p>₹ ${item.price}</p>
-            <input type="number" max="${item.quantity}" min="0" value="0">
+            <div class="input_contain">
+                <button onClick="updateValue('#${key}_input','add', 1)">△</button>
+                <input type="number" size="10" max="${item.quantity}" min="0" value="0" id="${key}_input"/>
+                <button onClick="updateValue('#${key}_input','subtract', 1)">▽</button>
+            </div>
             </div>
         `
         document.getElementById("drinks").append(itemElement);
@@ -139,7 +143,11 @@
             <div>
             <h3>${key}</h3>
             <p>₹ ${item.price}</p>
-            <input type="number" max="${item.quantity}" min="0" value="0">
+            <div class="input_contain">
+                <button onClick="updateValue('#${key}_input','add', 1)">△</button>
+                <input type="number" size="10" max="${item.quantity}" min="0" value="0" id="${key}_input"/>
+                <button onClick="updateValue('#${key}_input','subtract', 1)">▽</button>
+            </div>
             </div>
         `
         document.getElementById("biscuits").append(itemElement);
@@ -150,6 +158,34 @@
         })
 
     })
+
+    const updateValue = (qry, type, value) => {
+        const el = document.querySelector(qry)
+        const currentValue = parseInt(el.value, 10)
+        let maxValue = null
+        let minValue = null
+        if (el.getAttribute("max")) {
+            maxValue = parseInt(el.getAttribute("max"), 10)
+        }
+
+        if (el.getAttribute("min")) {
+            minValue = parseInt(el.getAttribute("min"), 10)
+        }
+
+        if (type == "add") {
+            if (typeof maxValue == 'number' && currentValue + value > maxValue) {
+                el.value = maxValue
+            } else {
+                el.value = currentValue + value
+            }
+        } else if (type == "subtract") {
+            if (typeof minValue == 'number' && currentValue - value < minValue) {
+                el.value = minValue
+            } else {
+                el.value = currentValue - value
+            }
+        }
+    }
 </script>
 
 </html>
