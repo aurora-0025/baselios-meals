@@ -1,0 +1,136 @@
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+body {
+    position: relative;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    font-size: 66px;
+    color: blue;
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+.storeItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+.storeItem div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storeItem input {
+    width: 100px;
+}
+
+.storeItem img {
+    width: 100px;
+}
+
+
+
+.store {
+    margin-bottom: 350px;
+}
+
+.footer {
+    background-color: aliceblue;
+    border-top: 10px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 350px;
+}
+
+.total h1 {
+    font-size: 32px;
+}
+
+.total p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.checkout {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  
